@@ -1,0 +1,14 @@
+{
+  "produtos": [
+    {
+      "id": "07d0",
+      "descrição": "Halls de morango",
+      "preco": 3
+    },
+    {
+      "id": "16e4",
+      "descrição": "Trento de limão",
+      "preco": 2.9
+    }
+  ]
+}
