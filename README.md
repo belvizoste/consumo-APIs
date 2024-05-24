@@ -57,3 +57,25 @@ TO-DO (documentar):
 Da aula de sexta (10/05):
 
 - Instalação de dependencias de projeto com o comando npm install 
+
+## Requisição 
+
+Para criar uma nova requisição, podemos utilizar a função fetch API. 
+
+~~~js 
+const requisicao = new Request('http://localhost:3000/produtos', {
+    "method": "GET", 
+    "headers": {
+        "Content-type": "application/json"
+    }
+});
+~~~
+
+Utilizamos `new Request()` para _instaciar_ a interface `Request()` na variável `requisicao`, de forma que ela se torna um objeto com os métodos exigidos por essa interface. 
+
+A requisição é constituída por duas partes: uma URL e um objeto JSON contendo as opções da requisição.
+- **URL**: é o endereço do recurso que você deseja acessar. Nesse caso, estamos acessando a rota `/produtos
+- **Objeto JSON**: contém as opções da requisição. Nesse caso, estamos especificando o método HTTP 
+
+ `method` define o método da requisição (GET, POST, PUT, DELETE, etc.) e `headers` define os cabeçalhos da requisição. 
+ - **Content-type**: é um cabeçalho que indica o tipo de conteúdo que está sendo enviado no corpo da requisição.
